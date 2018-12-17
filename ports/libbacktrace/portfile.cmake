@@ -1,5 +1,11 @@
 include(vcpkg_common_functions)
 
+if(NOT (VCPKG_CMAKE_SYSTEM_NAME STREQUAL "Linux"))
+    message(FATAL_ERROR "${PORT} currently support Linux only")
+endif()
+
+
+
 vcpkg_from_github(
   OUT_SOURCE_PATH SOURCE_PATH
   REPO ianlancetaylor/libbacktrace
