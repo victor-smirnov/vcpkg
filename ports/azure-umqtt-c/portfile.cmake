@@ -6,16 +6,16 @@ if("public-preview" IN_LIST FEATURES)
     vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO Azure/azure-umqtt-c
-        REF f68e8d535d18028e3e6ed4d806ce8994037a49fa
-        SHA512 9bea4c3dbd26f5221c4da782954a4e8b4d372aca75b71a9eb63b818f31f153e4be534a20960c007c3aa184766f2a826c5ba11e780e23098707419ab39f055cc1
+        REF c37883fbb05218fd940b87899a116af240f90c40
+        SHA512 21bbe6dfafcc96d35775ab83a75334fbfd41a55a82a7da483d5ff179aa3792424851f250007c9603ef17c789d8b23b1a8b81580fc2cf793fd00b487c321fdba3
         HEAD_REF master
     )
 else()
     vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
         REPO Azure/azure-umqtt-c
-        REF f68e8d535d18028e3e6ed4d806ce8994037a49fa
-        SHA512 9bea4c3dbd26f5221c4da782954a4e8b4d372aca75b71a9eb63b818f31f153e4be534a20960c007c3aa184766f2a826c5ba11e780e23098707419ab39f055cc1
+        REF c37883fbb05218fd940b87899a116af240f90c40
+        SHA512 21bbe6dfafcc96d35775ab83a75334fbfd41a55a82a7da483d5ff179aa3792424851f250007c9603ef17c789d8b23b1a8b81580fc2cf793fd00b487c321fdba3
         HEAD_REF master
     )
 endif()
@@ -40,3 +40,4 @@ file(REMOVE_RECURSE ${CURRENT_PACKAGES_DIR}/debug/include ${CURRENT_PACKAGES_DIR
 configure_file(${SOURCE_PATH}/LICENSE ${CURRENT_PACKAGES_DIR}/share/azure-umqtt-c/copyright COPYONLY)
 
 vcpkg_copy_pdbs()
+
