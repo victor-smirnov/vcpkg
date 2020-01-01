@@ -1,0 +1,3 @@
+Source: disruptor-memoria
+Version: 2020-01-01
+Description: Disruptor concurency pattern in c++, specifically for Memoria project
